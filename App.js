@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Container, Header, Left, Content, Body, Thumbnail, Title,
+  Container, Header, Left, Right, Content, Body, Thumbnail, Title,
   Text, Icon, Button, Card, CardItem } from 'native-base';
 import { Image } from 'react-native';
 export default class App extends Component {
@@ -40,12 +40,14 @@ export default class App extends Component {
                 </Left>
               </CardItem>
               <CardItem>
+
                 <Body>
                   <Image source={require("./creativity.png")} style={{height: 200, width: 200, flex: 1}}/>
                   <Text>
                   Hello, This is the general description of text lets see what we can do
                   </Text>
                 </Body>
+                
               </CardItem>
               <CardItem>
                 <Left>
