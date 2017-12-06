@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Container, Header, Left, Content, Body, Thumbnail, Title, Text, Icon, Button } from 'native-base';
+import {
+  Container, Header, Left, Content, Body, Thumbnail, Title,
+  Text, Icon, Button, Card, CardItem } from 'native-base';
 import { Image } from 'react-native';
 export default class App extends Component {
   state = {
@@ -27,15 +29,34 @@ export default class App extends Component {
              </Body>
           </Header>
           <Content>
-          <Image source={require("./creativity.png")}/>
-          <Text>
-          Now a general Image
-          </Text>
-          <Thumbnail source={require("./creativity.png")}/>
-            <Text>
-            Hi
-            </Text>
-            </Content>
+          <Card style={{flex: 0}}>
+              <CardItem>
+                <Left>
+                  <Thumbnail source={require("./creativity.png")} />
+                  <Body>
+                    <Text>Card view</Text>
+                    <Text note>December 7, 2017</Text>
+                  </Body>
+                </Left>
+              </CardItem>
+              <CardItem>
+                <Body>
+                  <Image source={require("./creativity.png")} style={{height: 200, width: 200, flex: 1}}/>
+                  <Text>
+                  Hello, This is the general description of text lets see what we can do
+                  </Text>
+                </Body>
+              </CardItem>
+              <CardItem>
+                <Left>
+                  <Button transparent textStyle={{color: '#87838B'}}>
+                    <Icon name="logo-github" />
+                    <Text>1,926 stars</Text>
+                  </Button>
+                </Left>
+              </CardItem>
+            </Card>
+          </Content>
         </Container> ):null);
      }
     }
