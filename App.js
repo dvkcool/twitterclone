@@ -27,6 +27,11 @@ export default class App extends Component {
              </Body>
           </Header>
           <Content>
+          <Image source={require("./creativity.png")}/>
+          <Text>
+          Now a general Image
+          </Text>
+          <Thumbnail source={require("./creativity.png")}/>
             <Text>
             Hi
             </Text>
