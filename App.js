@@ -6,6 +6,7 @@ import { Image, Dimensions, TouchableHighlight } from 'react-native';
 import Tab1 from './appres/Tab1';
 import Tab2 from './appres/Tab2';
 import Tab3 from './appres/Tab3';
+import Tab4 from './appres/Tab4';
 export default class App extends Component {
   state = {
     fontLoaded: false,
@@ -38,8 +39,11 @@ export default class App extends Component {
           <Tab heading={<TabHeading><Icon name="search" /></TabHeading>}>
             <Tab2 />
           </Tab>
-          <Tab heading={<TabHeading><Icon name="email" /></TabHeading>}>
+          <Tab heading={<TabHeading><Icon name="ios-notifications-outline" /></TabHeading>}>
             <Tab3 />
+          </Tab>
+          <Tab heading={<TabHeading><Icon name="ios-mail-outline" /></TabHeading>}>
+            <Tab4 />
           </Tab>
         </Tabs>
 
