@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import {
   Container, Header, Left, Right, Content, Body, Thumbnail, Title,
-  Text, Icon, Button, Card, CardItem } from 'native-base';
+  Text, Icon, Button, Card, CardItem, Tab, Tabs } from 'native-base';
 import { Image, Dimensions, TouchableHighlight } from 'react-native';
+import Tab1 from './appres/Tab1';
+import Tab2 from './appres/Tab2';
+import Tab3 from './appres/Tab3';
 export default class App extends Component {
   state = {
     fontLoaded: false,
@@ -18,7 +21,7 @@ export default class App extends Component {
   render() {
   return (
          this.state.fontLoaded ?(<Container>
-          <Header>
+          <Header hasTabs>
             <Left>
               <TouchableHighlight>
               <Thumbnail small source={require("./creativity.png")}/>
@@ -28,37 +31,18 @@ export default class App extends Component {
                <Title>Header</Title>
              </Body>
           </Header>
-          <Content>
-          <Card style={{flex: 0}}>
-              <CardItem>
-                <Left>
-                  <Thumbnail source={require("./creativity.png")} />
-                  <Body>
-                    <Text>Card view</Text>
-                    <Text note>December 7, 2017</Text>
-                  </Body>
-                </Left>
-              </CardItem>
-              <CardItem cardBody>
+          <Tabs initialPage={1}>
+          <Tab heading="Tab1">
+            <Tab1 />
+          </Tab>
+          <Tab heading="Tab2">
+            <Tab2 />
+          </Tab>
+          <Tab heading="Tab3">
+            <Tab3 />
+          </Tab>
+        </Tabs>
 
-                <Body>
-                  <Image source={require("./etr.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
-                  <Text>
-                  Hello, This is the general description of text lets see what we can do
-                  </Text>
-                </Body>
-
-              </CardItem>
-              <CardItem>
-                <Left>
-                  <Button transparent textStyle={{color: '#87838B'}}>
-                    <Icon name="logo-github" />
-                    <Text>1,926 stars</Text>
-                  </Button>
-                </Left>
-              </CardItem>
-            </Card>
-          </Content>
         </Container> ):null);
      }
     }
