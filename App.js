@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
   Container, Header, Left, Right, Content, Body, Thumbnail, Title,
   Text, Icon, Button, Card, CardItem } from 'native-base';
-import { Image, Dimensions } from 'react-native';
+import { Image, Dimensions, TouchableHighlight } from 'react-native';
 export default class App extends Component {
   state = {
     fontLoaded: false,
@@ -20,9 +20,9 @@ export default class App extends Component {
          this.state.fontLoaded ?(<Container>
           <Header>
             <Left>
-              <Button transparent>
-                 <Icon name='menu' />
-             </Button>
+              <TouchableHighlight>
+              <Thumbnail small source={require("./creativity.png")}/>
+              </TouchableHighlight>
              </Left>
              <Body>
                <Title>Header</Title>
