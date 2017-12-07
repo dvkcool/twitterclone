@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
   Container, Header, Left, Right, Content, Body, Thumbnail, Title,
-  Text, Icon, Button, Card, CardItem, Tab, Tabs } from 'native-base';
+  Text, Icon, Button, Card, CardItem, Tab, Tabs, TabHeading } from 'native-base';
 import { Image, Dimensions, TouchableHighlight } from 'react-native';
 import Tab1 from './appres/Tab1';
 import Tab2 from './appres/Tab2';
@@ -32,13 +32,13 @@ export default class App extends Component {
              </Body>
           </Header>
           <Tabs initialPage={1}>
-          <Tab heading="Tab1">
+          <Tab heading={<TabHeading><Icon name="home" /></TabHeading>}>
             <Tab1 />
           </Tab>
-          <Tab heading="Tab2">
+          <Tab heading={<TabHeading><Icon name="search" /></TabHeading>}>
             <Tab2 />
           </Tab>
-          <Tab heading="Tab3">
+          <Tab heading={<TabHeading><Icon name="email" /></TabHeading>}>
             <Tab3 />
           </Tab>
         </Tabs>
