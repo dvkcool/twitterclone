@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import {
   Container, Header, Left, Right, Content, Body, Thumbnail, Title,
-  Text, Icon, Button, Card, CardItem, Tab, Tabs, TabHeading } from 'native-base';
-import { Image, Dimensions, TouchableHighlight } from 'react-native';
+  Text, Icon, Button, Card, CardItem, Tab, Tabs, TabHeading, StyleProvider } from 'native-base';
+import { Image, Dimensions, TouchableHighlight, Platform, StatusBar  } from 'react-native';
 import Tab1 from './appres/Tab1';
 import Tab2 from './appres/Tab2';
-import Tab3 from './appres/Tab3';
-import Tab4 from './appres/Tab4';
+import Notification from './appres/Notification';
+import Messages from './appres/Messages';
+import getTheme from './native-base-theme/components';
+import material from './native-base-theme/variables/material';
 export default class App extends Component {
   state = {
     fontLoaded: false,
@@ -21,18 +23,21 @@ export default class App extends Component {
 }
   render() {
   return (
-         this.state.fontLoaded ?(<Container>
-          <Header hasTabs>
+         this.state.fontLoaded ?(<StyleProvider style={getTheme(material)}>
+         <Container style={{paddingTop: Platform.OS ==`ios` ? 0 : Expo.Constants.statusBarHeight}}>
+          <Header hasTabs >
             <Left>
               <TouchableHighlight>
-              <Thumbnail small source={require("./creativity.png")}/>
+              <Thumbnail small source={require("./appres/creativity.png")}/>
               </TouchableHighlight>
+
              </Left>
              <Body>
-               <Title>Header</Title>
+            <Title>Home</Title>
              </Body>
+             <Right/>
           </Header>
-          <Tabs initialPage={1}>
+          <Tabs initialPage={0}>
           <Tab heading={<TabHeading><Icon name="home" /></TabHeading>}>
             <Tab1 />
           </Tab>
@@ -40,13 +45,14 @@ export default class App extends Component {
             <Tab2 />
           </Tab>
           <Tab heading={<TabHeading><Icon name="ios-notifications-outline" /></TabHeading>}>
-            <Tab3 />
+            <Notification />
           </Tab>
           <Tab heading={<TabHeading><Icon name="ios-mail-outline" /></TabHeading>}>
-            <Tab4 />
+            <Messages />
           </Tab>
         </Tabs>
 
-        </Container> ):null);
+        </Container>
+      </StyleProvider>):null);
      }
     }

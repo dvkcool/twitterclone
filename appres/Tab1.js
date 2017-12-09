@@ -22,22 +22,20 @@ return (
          <Card style={{flex: 0}}>
              <CardItem>
                <Left>
-                 <Thumbnail source={require("./creativity.png")} />
+                 <Thumbnail source={require("./pics/pic1.png")} />
                  <Body>
-                   <Text>Card view</Text>
+                   <Text>User1</Text>
                    <Text note>December 7, 2017</Text>
                  </Body>
                </Left>
              </CardItem>
              <CardItem cardBody>
-
                <Body>
-                 <Image source={require("./etr.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
+                 <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                  <Text>
-                 Hello, This is the general description of Tab1 do
+                This is a tweet of user1
                  </Text>
                </Body>
-
              </CardItem>
              <CardItem>
                <Left>
@@ -48,9 +46,88 @@ return (
                </Left>
              </CardItem>
            </Card>
-
+           <Card style={{flex: 0}}>
+               <CardItem>
+                 <Left>
+                   <Thumbnail source={require("./pics/pic2.png")} />
+                   <Body>
+                     <Text>User2</Text>
+                     <Text note>December 7, 2017</Text>
+                   </Body>
+                 </Left>
+               </CardItem>
+               <CardItem cardBody>
+                 <Body>
+                   <Image source={require("./pics/pic2.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
+                   <Text>
+                  This is a tweet of user2
+                   </Text>
+                 </Body>
+               </CardItem>
+               <CardItem>
+                 <Left>
+                   <Button transparent textStyle={{color: '#87838B'}}>
+                     <Icon name="logo-github" />
+                     <Text>1,926 stars</Text>
+                   </Button>
+                 </Left>
+               </CardItem>
+             </Card>
+             <Card style={{flex: 0}}>
+                 <CardItem>
+                   <Left>
+                     <Thumbnail source={require("./pics/pic3.png")} />
+                     <Body>
+                       <Text>User3</Text>
+                       <Text note>December 7, 2017</Text>
+                     </Body>
+                   </Left>
+                 </CardItem>
+                 <CardItem cardBody>
+                   <Body>
+                     <Image source={require("./pics/pic3.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
+                     <Text>
+                     This is a tweet of user3
+                     </Text>
+                   </Body>
+                 </CardItem>
+                 <CardItem>
+                   <Left>
+                     <Button transparent textStyle={{color: '#87838B'}}>
+                       <Icon name="logo-github" />
+                       <Text>1,926 stars</Text>
+                     </Button>
+                   </Left>
+                 </CardItem>
+               </Card>
+               <Card style={{flex: 0}}>
+                   <CardItem>
+                     <Left>
+                       <Thumbnail source={require("./pics/pic4.png")} />
+                       <Body>
+                         <Text>User4</Text>
+                         <Text note>December 7, 2017</Text>
+                       </Body>
+                     </Left>
+                   </CardItem>
+                   <CardItem cardBody>
+                     <Body>
+                       <Image source={require("./pics/pic4.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
+                       <Text>
+                       This is a tweet of user 4
+                       </Text>
+                     </Body>
+                   </CardItem>
+                   <CardItem>
+                     <Left>
+                       <Button transparent textStyle={{color: '#87838B'}}>
+                         <Icon name="logo-github" />
+                         <Text>1,926 stars</Text>
+                       </Button>
+                     </Left>
+                   </CardItem>
+                 </Card>
          </Content>
-
       </Container> ):null);
    }
   }
