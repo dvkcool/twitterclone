@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { Container, Header, Item, Input, Icon, Button, Text } from 'native-base';
-export default class Tab2 extends Component {
+import { Container, Header, Item, Input, Icon, Button } from 'native-base';
+import {Text} from 'react-native';
+export default class Searchscreen extends Component {
   render() {
     return ( <Container>
-    <Header searchBar rounded>
      <Button transparent>
      <Text>Search</Text>
       </Button>
-      </Header>
        </Container>);
     }
   }
