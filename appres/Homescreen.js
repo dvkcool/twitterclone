@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {
   Container, Header, Left, Right, Content, Body, Thumbnail, Title,
- Icon, Button, Card, CardItem, Tab, Tabs, Spinner } from 'native-base';
-import { Image, Dimensions, TouchableHighlight, View, Text } from 'react-native';
+ Icon, Button, Card, CardItem, Text } from 'native-base';
+import { Image, Dimensions, TouchableHighlight, View} from 'react-native';
 import {AppLoading } from 'expo';
 export default class HomeScreen extends Component {
   state = {
