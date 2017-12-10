@@ -8,10 +8,10 @@ This is based on react-native, native-base and react-navigation libraries.
 ## Demo
 
 
- :--:| :-----:
- ![home-screen](./screenshots/screenshot1.png) | ![home-scren-scroll](./screenshots/screenshot2.png)
- ![search-screen](./screenshots/screenshot3.png) | ![drawer-scren](./screenshots/screenshot4.png)
- ![notification-screen](./screenshots/screenshot5.png) | ![message-screen](./screenshots/screenshot6.png)
+
+ ![home-screen](./screenshots/screenshot1.png) --|-- ![home-scren-scroll](./screenshots/screenshot2.png)
+ ![search-screen](./screenshots/screenshot3.png) --|-- ![drawer-scren](./screenshots/screenshot4.png)
+ ![notification-screen](./screenshots/screenshot5.png) --|-- ![message-screen](./screenshots/screenshot6.png)
 
 This projetc is based on [NativeBase](http://nativebase.io/) which is a free and open source framework that enables developers to build high-quality apps using [React Native](https://facebook.github.io/react-native/) for iOS and Android with a fusion of ES6.
 
