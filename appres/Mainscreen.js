@@ -34,6 +34,7 @@ const RootTabs = TabNavigator({
             style={{ color: tintColor }}
           />
       ),
+      tabBarVisible: false,
     },
   },
   Notifscreen:{
@@ -68,6 +69,7 @@ const RootTabs = TabNavigator({
   indicatorStyle: {
     backgroundColor: '#3190F6',
   },
+  animationEnabled: true,
   style: {
     backgroundColor: 'white',
     paddingTop: 0,

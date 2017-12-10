@@ -3,7 +3,7 @@ import {Container, Header, Left, Right, Content, Body, Thumbnail, Title,
  Icon, Button, Card, CardItem, Text } from 'native-base';
 import { Image, Dimensions, TouchableHighlight, View} from 'react-native';
 import {AppLoading } from 'expo';
-export default class HomeScreen extends Component {
+export default class Hometab extends Component {
   state = {
     fontLoaded: false,
   };
@@ -27,12 +27,12 @@ render() {
 }
 else{
   return (
-        <Container>
+
            <Content>
            <Card style={{flex: 1}}>
                <CardItem>
                  <Left>
-                   <Thumbnail source={require("./pics/pic1.png")} />
+                   <Thumbnail source={require("./../pics/pic1.png")} />
                    <Body>
                      <Text>User1</Text>
                      <Text note>December 7, 2017</Text>
@@ -41,7 +41,7 @@ else{
                </CardItem>
                <CardItem style={{paddingLeft: 70, paddingTop:0}}>
                  <Body>
-                   <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
+                   <Image source={require("./../pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                    <Text>
                   This is a tweet of user1
                    </Text>
@@ -57,7 +57,7 @@ else{
              <Card style={{flex: 1}}>
                  <CardItem>
                    <Left>
-                     <Thumbnail source={require("./pics/pic1.png")} />
+                     <Thumbnail source={require("./../pics/pic1.png")} />
                      <Body>
                        <Text>User1</Text>
                        <Text note>December 7, 2017</Text>
@@ -66,7 +66,7 @@ else{
                  </CardItem>
                  <CardItem style={{paddingLeft: 70, paddingTop:0}}>
                    <Body>
-                     <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
+                     <Image source={require("./../pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                      <Text>
                     This is a tweet of user1
                      </Text>
@@ -82,7 +82,7 @@ else{
                <Card style={{flex: 1}}>
                    <CardItem>
                      <Left>
-                       <Thumbnail source={require("./pics/pic1.png")} />
+                       <Thumbnail source={require("./../pics/pic1.png")} />
                        <Body>
                          <Text>User1</Text>
                          <Text note>December 7, 2017</Text>
@@ -91,7 +91,7 @@ else{
                    </CardItem>
                    <CardItem style={{paddingLeft: 70, paddingTop:0}}>
                      <Body>
-                       <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
+                       <Image source={require("./../pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                        <Text>
                       This is a tweet of user1
                        </Text>
@@ -107,7 +107,7 @@ else{
                  <Card style={{flex: 1}}>
                      <CardItem>
                        <Left>
-                         <Thumbnail source={require("./pics/pic1.png")} />
+                         <Thumbnail source={require("./../pics/pic1.png")} />
                          <Body>
                            <Text>User1</Text>
                            <Text note>December 7, 2017</Text>
@@ -116,7 +116,7 @@ else{
                      </CardItem>
                      <CardItem style={{paddingLeft: 70, paddingTop:0}}>
                        <Body>
-                         <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
+                         <Image source={require("./../pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                          <Text>
                         This is a tweet of user1
                          </Text>
@@ -130,7 +130,7 @@ else{
                      </CardItem>
                    </Card>
            </Content>
-        </Container>);
+);
 
 }
    }
