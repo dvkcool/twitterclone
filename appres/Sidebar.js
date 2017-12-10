@@ -42,7 +42,7 @@ export default class Sidebar extends Component{
               </Right>
               </CardItem>
               <CardItem style={{paddingTop:0}}>
-                <Text style={{color: 'grey',}}>@DVk_cool</Text>
+                <Text style={{color: 'grey',}}>@DVK_cool</Text>
               </CardItem>
               <CardItem>
                 <Text>

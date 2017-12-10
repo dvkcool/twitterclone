@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { View, TouchableHighlight, Platform} from 'react-native';
 import { Container, Content, Text, Header, Footer, Tab, Tabs, TabHeading, Icon, Left,
-          Right, Body, Thumbnail, Title, Item, Card, Input, Button, StyleProvider } from 'native-base';
+          Right, Body, Thumbnail, Title, Item, Card, Input, Button, StyleProvider, Fab  } from 'native-base';
 import { StackNavigator } from 'react-navigation';
 import {AppLoading } from 'expo';
 import Homescr from './Homescreen';
@@ -9,6 +9,7 @@ import Notification from './Notification';
 import Messages from './Messages';
 import getTheme from './../native-base-theme/components';
 import material from './../native-base-theme/variables/material';
+import Entypo from 'react-native-vector-icons/Entypo';
 const HomeScreen = ({ navigation }) => (
  <StyleProvider style={getTheme(material)}>
   <Container style={{paddingTop: Platform.OS === 'ios' ? 0 : Expo.Constants.statusBarHeight,}}>
@@ -36,7 +37,15 @@ const HomeScreen = ({ navigation }) => (
     <Messages/>
     </Tab>
     </Tabs>
-
+    <View>
+    <Fab
+    style={{ backgroundColor: '#5067FF' }}
+    position="bottomRight">
+    <Entypo
+         name={'feather'}
+         size={26}/>
+    </Fab>
+    </View>
   </Container>
    </StyleProvider>
 );
