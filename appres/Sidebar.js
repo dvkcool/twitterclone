@@ -30,7 +30,7 @@ export default class Sidebar extends Component{
             <Card>
               <CardItem>
                 <Left>
-                  <Thumbnail source={require('./creativity.png')}/>
+                  <Thumbnail source={require('./pics/dvk.png')}/>
                 </Left>
                 <Body/>
                 <Right/>

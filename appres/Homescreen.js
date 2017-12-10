@@ -32,19 +32,19 @@ else{
            <Card style={{flex: 1}}>
                <CardItem>
                  <Left>
-                   <Thumbnail source={require("./pics/pic1.png")} />
+                   <Thumbnail source={require("./pics/hasura.png")} />
                    <Body>
-                     <Text>User1</Text>
-                     <Text note>December 7, 2017</Text>
+                     <Text>Hasura</Text>
+                     <Text note>@HasuraHQ, December 8, 2017</Text>
                    </Body>
                  </Left>
                </CardItem>
                <CardItem style={{paddingLeft: 70, paddingTop:0}}>
                  <Body>
-                   <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                    <Text>
-                  This is a tweet of user1
+                      Hi Twitterverse! Hasura hub is up on @ProductHunt today (currently at #2 😍). Do check us out on and show us some love (aka upvotes🤪). #ProductHunt #appdev #webdev #MobileAppDevelopment
                    </Text>
+                   <Image source={require("./pics/hasuratweet.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                  </Body>
                </CardItem>
                <CardItem style={{paddingLeft: 70, paddingTop:0}}>
@@ -57,19 +57,19 @@ else{
              <Card style={{flex: 1}}>
                  <CardItem>
                    <Left>
-                     <Thumbnail source={require("./pics/pic1.png")} />
+                     <Thumbnail source={require("./pics/hasura.png")} />
                      <Body>
-                       <Text>User1</Text>
-                       <Text note>December 7, 2017</Text>
+                       <Text>Hasura</Text>
+                       <Text note>@HasuraHQ, December 8, 2017</Text>
                      </Body>
                    </Left>
                  </CardItem>
                  <CardItem style={{paddingLeft: 70, paddingTop:0}}>
                    <Body>
-                     <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                      <Text>
-                    This is a tweet of user1
+                     This is one of the funnest events that we're partnering with🤡. Can't wait to see what gets built at @supersillyhack happening at @hubsg tomorrow! #hackathon #Singapore #hackitonhasura
                      </Text>
+                     <Image source={require("./pics/hasuratwe2.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                    </Body>
                  </CardItem>
                  <CardItem style={{paddingLeft: 70, paddingTop:0}}>
@@ -82,19 +82,19 @@ else{
                <Card style={{flex: 1}}>
                    <CardItem>
                      <Left>
-                       <Thumbnail source={require("./pics/pic1.png")} />
+                       <Thumbnail source={require("./pics/hasura.png")} />
                        <Body>
-                         <Text>User1</Text>
-                         <Text note>December 7, 2017</Text>
+                         <Text>Hasura</Text>
+                         <Text note>@HasuraHQ, December 8, 2017</Text>
                        </Body>
                      </Left>
                    </CardItem>
                    <CardItem style={{paddingLeft: 70, paddingTop:0}}>
                      <Body>
-                       <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                        <Text>
-                      This is a tweet of user1
+                          Hi Twitterverse! Hasura hub is up on @ProductHunt today (currently at #2 😍). Do check us out on and show us some love (aka upvotes🤪). #ProductHunt #appdev #webdev #MobileAppDevelopment
                        </Text>
+                       <Image source={require("./pics/hasuratweet.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                      </Body>
                    </CardItem>
                    <CardItem style={{paddingLeft: 70, paddingTop:0}}>
@@ -107,19 +107,19 @@ else{
                  <Card style={{flex: 1}}>
                      <CardItem>
                        <Left>
-                         <Thumbnail source={require("./pics/pic1.png")} />
+                         <Thumbnail source={require("./pics/hasura.png")} />
                          <Body>
-                           <Text>User1</Text>
-                           <Text note>December 7, 2017</Text>
+                           <Text>Hasura</Text>
+                           <Text note>@HasuraHQ, December 8, 2017</Text>
                          </Body>
                        </Left>
                      </CardItem>
                      <CardItem style={{paddingLeft: 70, paddingTop:0}}>
                        <Body>
-                         <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                          <Text>
-                        This is a tweet of user1
+                            Hi Twitterverse! Hasura hub is up on @ProductHunt today (currently at #2 😍). Do check us out on and show us some love (aka upvotes🤪). #ProductHunt #appdev #webdev #MobileAppDevelopment
                          </Text>
+                         <Image source={require("./pics/hasuratweet.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                        </Body>
                      </CardItem>
                      <CardItem style={{paddingLeft: 70, paddingTop:0}}>

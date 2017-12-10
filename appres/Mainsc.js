@@ -15,7 +15,7 @@ const HomeScreen = ({ navigation }) => (
     <Header hasTabs>
       <Left>
         <TouchableHighlight>
-        <Thumbnail small source={require("./creativity.png")}/>
+        <Thumbnail small source={require('./pics/dvk.png')}/>
         </TouchableHighlight>
       </Left>
       <Body>
@@ -47,7 +47,7 @@ const SearchScreen = ({ navigation }) => (
       <Header searchBar rounded>
         <Item>
         <TouchableHighlight  onPress={() => navigation.navigate('Home')}>
-        <Icon name="ios-arrow-round-back-outline"/>
+        <Icon name="ios-arrow-round-back-outline" style={{color:'blue',}}/>
         </TouchableHighlight>
           <Input placeholder="Search Twitter " />
         </Item>
