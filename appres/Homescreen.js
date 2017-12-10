@@ -73,10 +73,10 @@ else{
                    </Body>
                  </CardItem>
                  <CardItem style={{paddingLeft: 70, paddingTop:0}}>
-                    <Icon name="ios-text-outline" /><Text>12          </Text>
-                    <Icon name="ios-repeat" /><Text>25          </Text>
-                    <Icon name="ios-heart-outline" /><Text>20         </Text>
-                    <Icon name="ios-mail-outline" /><Text>21          </Text>
+                    <Icon name="ios-text-outline" /><Text>12</Text>
+                    <Icon name="ios-repeat" /><Text>25</Text>
+                    <Icon name="ios-heart-outline" /><Text>20</Text>
+                    <Icon name="ios-mail-outline" /><Text>21</Text>
                  </CardItem>
                </Card>
                <Card style={{flex: 1}}>
