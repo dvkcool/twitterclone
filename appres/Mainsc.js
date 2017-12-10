@@ -1,8 +1,9 @@
-import React from 'react';
-import { View, Text, TouchableHighlight, Platform} from 'react-native';
-import { Container, Content, Header, Tab, Tabs, TabHeading, Icon, Left,
-          Right, Body, Thumbnail, Title, Item, Input, Button, StyleProvider } from 'native-base';
-import { StackNavigator } from 'react-navigation'; // 1.0.0-beta.14
+import React, {Component} from 'react';
+import { View, TouchableHighlight, Platform} from 'react-native';
+import { Container, Content, Text, Header, Footer, Tab, Tabs, TabHeading, Icon, Left,
+          Right, Body, Thumbnail, Title, Item, Card, Input, Button, StyleProvider } from 'native-base';
+import { StackNavigator } from 'react-navigation';
+import {AppLoading } from 'expo';
 import Homescr from './Homescreen';
 import Notification from './Notification';
 import Messages from './Messages';
@@ -54,6 +55,32 @@ const SearchScreen = ({ navigation }) => (
           <Text>Search</Text>
         </Button>
        </Header>
+       <Body>
+        <Card style={{flex:0, width:300}}>
+          <Text> Search Results</Text>
+        </Card>
+        <Card  style={{flex:0, width:300}}>
+          <Text> Search Results</Text>
+        </Card>
+        <Card  style={{flex:0, width:300}}>
+          <Text> Search Results</Text>
+        </Card>
+        <Card  style={{flex:0, width:300}}>
+          <Text> Search Results</Text>
+        </Card>
+
+       </Body>
+       <Footer style={{backgroundColor:'#fff'}}>
+        <Left>
+          <Text style={{color:'blue',}}>All </Text>
+        </Left>
+        <Body>
+          <Text style={{color:'grey'}}> Mentions</Text>
+        </Body>
+        <Right>
+          <Icon name="ios-settings-outline" style={{color:'blue'}}/>
+        </Right>
+       </Footer>
     </Container>
     </StyleProvider>
 );
@@ -72,5 +99,31 @@ const RootNavigator = StackNavigator({
     },
   },
 });
+export default class Mainsc extends Component {
+  state = {
+    fontLoaded: false,
+  };
 
-export default RootNavigator;
+  async componentWillMount() {
+  await Expo.Font.loadAsync({
+    'Roboto': require('native-base/Fonts/Roboto.ttf'),
+    'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+  });
+  this.setState({ fontLoaded: true });
+}
+render() {
+  if (!this.state.fontLoaded) {
+  return (
+    <AppLoading
+      startAsync={this.componentWillMount}
+      onFinish={() => this.setState({ fontLoaded: true })}
+      onError={console.warn}
+    />
+  );
+}
+else{
+  return (<RootNavigator/>);
+
+}
+   }
+  }
