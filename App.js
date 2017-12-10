@@ -9,7 +9,6 @@ const HomeScreenRouter = DrawerNavigator(
     Home: { screen: Mainscreen  },
   },
   {
-    // passing all route info as props to the custom Sidebar component
     contentComponent: props => <Sidebar {...props} />
   }
 );

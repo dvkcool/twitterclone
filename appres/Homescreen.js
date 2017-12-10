@@ -30,7 +30,7 @@ else{
   return (
         <Container>
            <Content>
-           <Card style={{flex: 0}}>
+           <Card style={{flex: 1}}>
                <CardItem>
                  <Left>
                    <Thumbnail source={require("./pics/pic1.png")} />
@@ -40,7 +40,7 @@ else{
                    </Body>
                  </Left>
                </CardItem>
-               <CardItem cardBody>
+               <CardItem style={{paddingLeft: 70, paddingTop:0}}>
                  <Body>
                    <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                    <Text>
@@ -48,96 +48,88 @@ else{
                    </Text>
                  </Body>
                </CardItem>
-               <CardItem>
-                 <Left>
-                   <Button transparent textStyle={{color: '#87838B'}}>
-                     <Icon name="logo-github" />
-                     <Text>1,926 stars</Text>
-                   </Button>
-                 </Left>
+               <CardItem style={{paddingLeft: 70, paddingTop:0}}>
+                  <Icon name="ios-text-outline" /><Text>12          </Text>
+                  <Icon name="ios-repeat" /><Text>25          </Text>
+                  <Icon name="ios-heart-outline" /><Text>20         </Text>
+                  <Icon name="ios-mail-outline" /><Text>21          </Text>
                </CardItem>
              </Card>
-             <Card style={{flex: 0}}>
+             <Card style={{flex: 1}}>
                  <CardItem>
                    <Left>
-                     <Thumbnail source={require("./pics/pic2.png")} />
+                     <Thumbnail source={require("./pics/pic1.png")} />
                      <Body>
-                       <Text>User2</Text>
+                       <Text>User1</Text>
                        <Text note>December 7, 2017</Text>
                      </Body>
                    </Left>
                  </CardItem>
-                 <CardItem cardBody>
+                 <CardItem style={{paddingLeft: 70, paddingTop:0}}>
                    <Body>
-                     <Image source={require("./pics/pic2.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
+                     <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                      <Text>
-                    This is a tweet of user2
+                    This is a tweet of user1
                      </Text>
                    </Body>
                  </CardItem>
-                 <CardItem>
-                   <Left>
-                     <Button transparent textStyle={{color: '#87838B'}}>
-                       <Icon name="logo-github" />
-                       <Text>1,926 stars</Text>
-                     </Button>
-                   </Left>
+                 <CardItem style={{paddingLeft: 70, paddingTop:0}}>
+                    <Icon name="ios-text-outline" /><Text>12          </Text>
+                    <Icon name="ios-repeat" /><Text>25          </Text>
+                    <Icon name="ios-heart-outline" /><Text>20         </Text>
+                    <Icon name="ios-mail-outline" /><Text>21          </Text>
                  </CardItem>
                </Card>
-               <Card style={{flex: 0}}>
+               <Card style={{flex: 1}}>
                    <CardItem>
                      <Left>
-                       <Thumbnail source={require("./pics/pic3.png")} />
+                       <Thumbnail source={require("./pics/pic1.png")} />
                        <Body>
-                         <Text>User3</Text>
+                         <Text>User1</Text>
                          <Text note>December 7, 2017</Text>
                        </Body>
                      </Left>
                    </CardItem>
-                   <CardItem cardBody>
+                   <CardItem style={{paddingLeft: 70, paddingTop:0}}>
                      <Body>
-                       <Image source={require("./pics/pic3.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
+                       <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                        <Text>
-                       This is a tweet of user3
+                      This is a tweet of user1
                        </Text>
                      </Body>
                    </CardItem>
-                   <CardItem>
-                     <Left>
-                       <Button transparent textStyle={{color: '#87838B'}}>
-                         <Icon name="logo-github" />
-                         <Text>1,926 stars</Text>
-                       </Button>
-                     </Left>
+                   <CardItem style={{paddingLeft: 70, paddingTop:0}}>
+                      <Icon name="ios-text-outline" /><Text>12          </Text>
+                      <Icon name="ios-repeat" /><Text>25          </Text>
+                      <Icon name="ios-heart-outline" /><Text>20         </Text>
+                      <Icon name="ios-mail-outline" /><Text>21          </Text>
                    </CardItem>
                  </Card>
-                 <Card style={{flex: 0}}>
+                 <Card style={{flex: 1}}>
                      <CardItem>
                        <Left>
-                         <Thumbnail source={require("./pics/pic4.png")} />
+                         <Thumbnail source={require("./pics/pic1.png")} />
                          <Body>
-                           <Text>User4</Text>
+                           <Text>User1</Text>
                            <Text note>December 7, 2017</Text>
                          </Body>
                        </Left>
                      </CardItem>
-                     <CardItem cardBody>
+                     <CardItem style={{paddingLeft: 70, paddingTop:0}}>
                        <Body>
-                         <Image source={require("./pics/pic4.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
+                         <Image source={require("./pics/pic1.png")} style={{height: 200, width: Dimensions.get('window').width, flex: 1}}/>
                          <Text>
-                         This is a tweet of user 4
+                        This is a tweet of user1
                          </Text>
                        </Body>
                      </CardItem>
-                     <CardItem>
-                       <Left>
-                         <Button transparent textStyle={{color: '#87838B'}}>
-                           <Icon name="logo-github" />
-                           <Text>1,926 stars</Text>
-                         </Button>
-                       </Left>
+                     <CardItem style={{paddingLeft: 70, paddingTop:0}}>
+                        <Icon name="ios-text-outline" /><Text>12          </Text>
+                        <Icon name="ios-repeat" /><Text>25          </Text>
+                        <Icon name="ios-heart-outline" /><Text>20         </Text>
+                        <Icon name="ios-mail-outline" /><Text>21          </Text>
                      </CardItem>
-                   </Card>
+                   </Card>                                
            </Content>
         </Container>);
 

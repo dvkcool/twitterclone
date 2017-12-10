@@ -38,11 +38,17 @@ export default class Sidebar extends Component{
               <CardItem>
               <H2>Divyanshu Kumar</H2>
               <Right>
-                <Icon name = 'ios-arrow-down-outline' style={{color:'#3F51B5'}}/>
+                <Icon name = 'ios-arrow-down-outline' style={{color:'#28B8E5'}}/>
               </Right>
               </CardItem>
               <CardItem style={{paddingTop:0}}>
                 <Text style={{color: 'grey',}}>@DVk_cool</Text>
+              </CardItem>
+              <CardItem>
+                <Text>
+                225 <Text style={{color: 'grey',}}> Following </Text> 56
+                <Text style={{color: 'grey',}}> Followers </Text>
+                </Text>
               </CardItem>
               <CardItem>
                 <Icon name='ios-person-outline'/>
@@ -67,12 +73,12 @@ export default class Sidebar extends Component{
                 <Text> Help Center</Text>
               </CardItem>
             </Card>
-          <Footer style={{  footerDefaultBg: '#fff'}} >
+          <Footer style={{ backgroundColor: '#fff'}} >
             <Left>
-              <Icon style={{ marginLeft: 10 }} name='moon'/>
+              <Icon name='ios-moon-outline' style={{marginLeft: 10, color:'#28B8E5'}}/>
             </Left>
             <Right>
-              <Icon style={{ marginRight: 10 }} name='qr-scanner'/>
+              <Icon name='ios-apps-outline' style={{marginRight: 10 , color:'#28B8E5'}}/>
             </Right>
           </Footer>
         </Container>
