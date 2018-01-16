@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import * as Animatable from 'react-native-animatable';
 import {Container, Header, Left, Right, Content, Body, Thumbnail, Title,
-        Icon, Button, Card, CardItem, Text } from 'native-base';
-import { Image, Dimensions, TouchableHighlight, View, ActivityIndicator, ListView} from 'react-native';
+        Icon, Button, Card, CardItem  } from 'native-base';
+import { Image, Dimensions, TouchableHighlight, View, ActivityIndicator, ListView, Text} from 'react-native';
 import {AppLoading } from 'expo';
 export default class HomeScreen extends Component {
-  state = {
+ state = {
     isLoading: true,
   };
 
   componentDidMount() {
 
-    return fetch('https://data.bleary75.hasura-app.io/v1/query', {
+    return fetch('https://data.bandolier66.hasura-app.io/v1/query', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -95,4 +95,6 @@ export default class HomeScreen extends Component {
 
     }
   }
+
+
 }
